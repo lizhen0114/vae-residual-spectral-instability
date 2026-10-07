@@ -1,0 +1,60 @@
+{
+  "dataset": "symmetric_gaussian_mixture",
+  "n_samples": 256000,
+  "data_dim": 8,
+  "latent_dim": 4,
+  "spectrum_decay": 0.1,
+  "hidden_enc": [
+    256,
+    128
+  ],
+  "hidden_dec": [
+    128,
+    256
+  ],
+  "batch_size": 4096,
+  "lr": 0.001,
+  "seeds": [
+    0
+  ],
+  "active_kl_threshold": 0.001,
+  "active_var_tol": 0.02,
+  "eval_points": 4096,
+  "z_mc": 1024,
+  "collapsed_mc": 128,
+  "collapsed_decode_batch": 4096,
+  "power_iters": 100,
+  "power_tol": 1e-06,
+  "importance_chunk": 128,
+  "outdir": "results_mixture_a05_zc128",
+  "device": "cuda",
+  "num_workers": 4,
+  "pin_memory": true,
+  "use_tf32": false,
+  "use_amp": true,
+  "s_min": 0.65,
+  "s_max": 1.05,
+  "ds": 0.001,
+  "init_epochs": 120,
+  "step_epochs": 30,
+  "n_lambda_repeats": 16,
+  "data_seed": 1234,
+  "rotate_data": true,
+  "bias_extrapolation": true,
+  "b_scales": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "l_scales": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "bootstrap_reps": 500,
+  "train_only": false,
+  "estimate_only": false,
+  "resume": false,
+  "gpu_resident_data": true,
+  "mixture_a": 0.5
+}

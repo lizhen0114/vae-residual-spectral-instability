@@ -1,0 +1,51 @@
+{
+  "results_dir": "results_mixture_a05_zc128",
+  "output_dir": "results_coupled_curvature_a05_dense",
+  "training_seed": 0,
+  "checkpoint_s": [
+    0.75,
+    0.84,
+    0.93,
+    1.02
+  ],
+  "device": "auto",
+  "data_points": 4096,
+  "mode_latent_samples": 1024,
+  "validation_samples": 16384,
+  "collapsed_mc": 128,
+  "chunk_size": 64,
+  "decode_batch_size": 4096,
+  "power_iters": 300,
+  "power_tol": 1e-06,
+  "repeats": 4,
+  "measurement_seed": 20261007,
+  "amplitudes": [
+    0.01,
+    0.02,
+    0.04,
+    0.08
+  ],
+  "probe_s_factors": [
+    0.9,
+    0.91,
+    0.92,
+    0.93,
+    0.94,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.08,
+    1.09,
+    1.1
+  ]
+}
